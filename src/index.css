@@ -5,4 +5,5 @@ html, body {
 body {
   font-family: Raleway, sans-serif;
   color: #666;
-  font-size: 1em; }
+  font-size: 1em;
+  line-height: 1em; }
