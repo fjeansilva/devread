@@ -1,46 +1,18 @@
-import React, { Component } from 'react';
-import { Form, Input, Button, Select } from 'antd';
+import React from 'react';
+import TopBar from '../../../../../../../../components/TopBar';
+import Footer from '../../../../../../../../components/Footer';
+import CreateForm from './components/Form';
+import './index.css';
 
-const FormItem = Form.Item;
-const { TextArea } = Input;
+const Create = () => (
+  <div>
+    <TopBar />
+    <section className="create__comment">
+      <h1>CREATE COMMENT</h1>
+      <CreateForm />
+    </section>
+    <Footer />
+  </div>
+);
 
-class CreateCommentFormContainer extends Component {
-
-  handleSubmit = (e) => {
-    e.preventDefault();
-    this.props.form.validateFields((err, values) => {
-      if (!err) {
-        console.log('Received values of form: ', values);
-      }
-    });
-  }
-
-  render() {
-    const { getFieldDecorator } = this.props.form;
-    return (
-      <Form onSubmit={this.handleSubmit}>
-        <FormItem label="Author">
-          {getFieldDecorator('author', {
-            rules: [{ required: true, message: 'Please input your name' }],
-          })(
-            <Input />
-          )}
-        </FormItem>
-        <FormItem label="Body">
-          {getFieldDecorator('body', {
-            rules: [{ required: true, message: 'Please input an awesome content :)' }],
-          })(
-            <TextArea rows={4} />
-          )}
-        </FormItem>
-        <FormItem>
-          <Button type="primary" htmlType="submit" className="login-form-button">
-            Save
-          </Button>
-        </FormItem>
-      </Form>
-    )
-  }
-}
-
-export default Form.create()(CreateCommentFormContainer);
+export default Create;
