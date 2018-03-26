@@ -1,5 +1,5 @@
 .top__bar {
-  height: 50px;
+  height: 80px;
   padding: 10px;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +23,6 @@
 
   @media screen and (max-width: 420px) {
     justify-content: center;
-    height: 60px;
     
     .project__logo {
       flex-flow: column nowrap;

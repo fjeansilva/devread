@@ -1,9 +1,11 @@
 import React from 'react';
+import TopBar from '../TopBar';
 import './index.css';
 
-const Header = ({ children }) => (
+
+const Header = () => (
   <header className="header">
-    {children}
+    <TopBar />
   </header>
 );
 

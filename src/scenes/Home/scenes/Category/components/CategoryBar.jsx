@@ -1,22 +1,23 @@
 import React from 'react';
+import './index.css';
 
 const CategoryBar = () => (
-  <nav>
-    <ul>
+  <nav className="nav">
+    <ul className="nav__menu">
       <li>
-        <a href="/react">React</a>
+        <a href="/react" className="menu__item">React</a>
       </li>
       <li>
-        <a href="/react">Redux</a>
+        <a href="/react" className="menu__item">Redux</a>
       </li>
       <li>
-        <a href="/react">React Native</a>
+        <a href="/react" className="menu__item">React Native</a>
       </li>
       <li>
-        <a href="/react">JavaScript</a>
+        <a href="/react" className="menu__item">JavaScript</a>
       </li>
       <li>
-        <a href="/react">Udacity</a>
+        <a href="/react" className="menu__item">Udacity</a>
       </li>
     </ul>
   </nav>
