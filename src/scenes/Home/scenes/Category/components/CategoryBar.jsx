@@ -11,12 +11,6 @@ const CategoryBar = () => (
         <a href="/react" className="menu__item">Redux</a>
       </li>
       <li>
-        <a href="/react" className="menu__item">React Native</a>
-      </li>
-      <li>
-        <a href="/react" className="menu__item">JavaScript</a>
-      </li>
-      <li>
         <a href="/react" className="menu__item">Udacity</a>
       </li>
     </ul>

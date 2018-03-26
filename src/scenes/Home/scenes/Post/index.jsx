@@ -1,5 +1,6 @@
 import React from 'react';
 import Post from './components/post';
+import './index.css';
 
 const listOfPosts = () => {
   const posts = [1, 2, 3, 4, 5, 6];
@@ -7,7 +8,7 @@ const listOfPosts = () => {
 };
 
 const ListPosts = () => (
-  <section>
+  <section className="posts">
     {listOfPosts()}
   </section>
 );
